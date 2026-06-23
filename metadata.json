@@ -1,0 +1,11 @@
+{
+  "name": "Matic FUELTEC Ltd",
+  "description": "Luxury corporate eCommerce and AI-powered platform for Matic FUELTEC Ltd.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

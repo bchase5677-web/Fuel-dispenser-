@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+
+  --color-luxury-black: #050505;
+  --color-luxury-charcoal: #111111;
+  --color-luxury-gold: #D4AF37;
+  --color-luxury-gold-light: #F3E5AB;
+  --color-luxury-gold-dark: #AA8C2C;
+  --color-luxury-white: #FAFAFA;
+}
+
+@layer base {
+  body {
+    @apply bg-luxury-black text-luxury-white font-sans antialiased overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-luxury-charcoal/80 backdrop-blur-md border border-white/5 shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-2xl;
+  }
+  
+  .glass-nav {
+    @apply bg-luxury-black/90 backdrop-blur-lg border-b border-white/5;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-luxury-gold-light via-luxury-gold to-luxury-gold-dark bg-clip-text text-transparent;
+  }
+  
+  .glow-gold {
+    @apply shadow-[0_0_15px_rgba(212,175,55,0.3)];
+  }
+}
